@@ -8,7 +8,7 @@ from backend import generate_nishit_response
 
 # Load API key
 load_dotenv()
-API_KEY = os.getenv("OPENAI_API_KEY")
+API_KEY = os.secrets["OPENAI_API_KEY"]
 
 st.set_page_config(page_title="Nishit's AI Voice Bot", page_icon="🎙️")
 st.title("🎤 Talk to Nishit's AI Twin")
